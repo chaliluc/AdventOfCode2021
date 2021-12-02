@@ -1,2 +1,6 @@
 # AdventOfCode2021
-My take on the Advent of Code 2021 challenge
+This is my take on the Advent of Code challenge 2021 https://adventofcode.com/
+
+Being an ABAPer, this is of course in ABAP.
+
+Enjoy!
