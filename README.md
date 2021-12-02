@@ -6,11 +6,10 @@ Being an ABAPer, this is of course in ABAP.
 Enjoy!
 
 
-Files:
----------------------
-ZCL_LC_ADV2021 : Super class for daily challenges. Contains methods to locate and upload the challenge input files.
+## Files:
+**ZCL_LC_ADV2021** -> Super class for daily challenges. Contains methods to locate and upload the challenge input files.
 
-zlc_advent21_day1 : December 1 challenge
+**zlc_advent21_day1** -> December 1 challenge
 
-zlc_advent21_day2 : December 2 challenge
+**zlc_advent21_day2** -> December 2 challenge
 
