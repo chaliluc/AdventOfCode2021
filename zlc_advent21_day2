@@ -18,7 +18,7 @@ endclass.
 *&---------------------------------------------------------------------*
 
 data l_input_filename type string.
-data l_final_position type i.
+data l_final_position type p.
 data lr_day2 type ref to yc_day2.
 data lt_input type yc_day2=>yc_string_table.
 
@@ -33,7 +33,7 @@ l_final_position = lr_day2->get_final_position( lt_input ).
 write: / 'Final position', l_final_position.
 
 l_final_position = lr_day2->get_final_position_with_aim( lt_input ).
-write: / 'Final position with aim', l_final_position.
+write: / 'Final position with aim', l_final_position .
 
 *&---------------------------------------------------------------------*
 
