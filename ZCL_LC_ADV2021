@@ -5,7 +5,7 @@ class zcl_lc_adv2021 definition
   public section.
 
     types:
-      yc_string_table type standard table of string .
+      yt_string_table type standard table of string .
 
     constants g_path type string value 'C:\temp\ADVENTOFCODE' ##NO_TEXT.
 
@@ -16,16 +16,16 @@ class zcl_lc_adv2021 definition
       importing
         !i_filename    type string
       exporting
-        !et_data       type yc_string_table
+        !et_data       type yt_string_table
       returning
         value(r_subrc) type i .
   protected section.
   private section.
-endclass.
+ENDCLASS.
 
 
 
-class zcl_lc_adv2021 implementation.
+CLASS ZCL_LC_ADV2021 IMPLEMENTATION.
 
 
 * <SIGNATURE>---------------------------------------------------------------------------------------+
@@ -61,7 +61,7 @@ class zcl_lc_adv2021 implementation.
 * | Instance Public Method ZCL_LC_ADV2021->IMPORT_DATA
 * +-------------------------------------------------------------------------------------------------+
 * | [--->] I_FILENAME                     TYPE        STRING
-* | [<---] ET_DATA                        TYPE        YC_STRING_TABLE
+* | [<---] ET_DATA                        TYPE        YT_STRING_TABLE
 * | [<-()] R_SUBRC                        TYPE        I
 * +--------------------------------------------------------------------------------------</SIGNATURE>
   method import_data.
@@ -76,4 +76,4 @@ class zcl_lc_adv2021 implementation.
     endif.
 
   endmethod.
-endclass.
+ENDCLASS.
