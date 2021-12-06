@@ -7,9 +7,9 @@ report zl_advent21_day2.
 
 class yc_day2 definition inheriting from zcl_lc_adv2021.
   public section.
-    methods get_final_position importing it_data           type yc_string_table optional preferred parameter it_data
+    methods get_final_position importing it_data           type yt_string_table optional preferred parameter it_data
                                returning value(r_position) type i.
-    methods get_final_position_with_aim importing it_data           type yc_string_table optional preferred parameter it_data
+    methods get_final_position_with_aim importing it_data           type yt_string_table optional preferred parameter it_data
                                         returning value(r_position) type i.
 
 endclass.
@@ -20,7 +20,7 @@ endclass.
 data l_input_filename type string.
 data l_final_position type p.
 data lr_day2 type ref to yc_day2.
-data lt_input type yc_day2=>yc_string_table.
+data lt_input type yc_day2=>yt_string_table.
 
 create object lr_day2.
 l_input_filename = lr_day2->get_input_filename( ).
