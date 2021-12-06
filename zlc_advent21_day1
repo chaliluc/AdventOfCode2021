@@ -7,9 +7,9 @@ report zl_advent21_day1.
 
 class yc_day1 definition inheriting from zcl_lc_adv2021.
   public section.
-    methods get_number_of_increase importing it_data           type yc_string_table optional preferred parameter it_data
+    methods get_number_of_increase importing it_data           type yt_string_table optional preferred parameter it_data
                                    returning value(r_increase) type i.
-    methods get_number_of_agr_increase importing it_data           type yc_string_table optional preferred parameter it_data
+    methods get_number_of_agr_increase importing it_data           type yt_string_table optional preferred parameter it_data
                                        returning value(r_increase) type i.
 
 endclass.
@@ -19,7 +19,7 @@ endclass.
 data l_increase type i.
 data l_input_filename type string.
 data lr_day1 type ref to yc_day1.
-data lt_input type yc_day1=>yc_string_table.
+data lt_input type yc_day1=>yt_string_table.
 
 create object lr_day1.
 l_input_filename = lr_day1->get_input_filename( ).
@@ -57,7 +57,7 @@ class yc_day1 implementation.
     data l_value type i.
     data l_agr_value type i.
     data l_tabix type i.
-    data lt_agr_data type yc_string_table.
+    data lt_agr_data type yt_string_table.
 
     loop at it_data into l_value from 1 to lines( it_data ) - 2.
       l_tabix = sy-tabix.
