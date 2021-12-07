@@ -3,7 +3,7 @@
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-report zl_advent21_day2.
+report zlc_advent21_day2.
 
 class yc_day2 definition inheriting from zcl_lc_adv2021.
   public section.
