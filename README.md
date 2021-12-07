@@ -13,3 +13,8 @@ Enjoy!
 
 **zlc_advent21_day2** -> December 2 challenge
 
+**zlc_advent21_day3** -> December 3 challenge
+
+**zlc_advent21_day4** -> December 4 challenge
+
+**zlc_advent21_day5** -> December 5 challenge
